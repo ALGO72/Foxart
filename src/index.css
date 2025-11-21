@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+:root {
+  --font-sora: "Sora", sans-serif;
+  color-scheme: dark; /* Using the default dark mode. */
+}
+
+* {
+  scroll-behavior: smooth; /* Scrolling towards a target element is smooth and progressive. */
+}
+
+@layer base {
+  body {
+    @apply bg-n-9 text-n-1 text-base;
+    font-family: var(--font-sora);
+  }
+}
+
+@layer components {
+  .font-sora {
+    font-family: var(--font-sora);
+  }
+}
+
+a.button:hover {
+  @apply no-underline;
+}
+
+a:hover {
+  @apply underline text-p-3;
+  @apply duration-300 ease-in-out
+}
+
+
+@theme {
+  --color-p-1: #D6E4FE;
+  --color-p-2: #689EFF;
+  --color-p-3: #0059F7;
+  --color-p-4: #00308F;
+  --color-p-5: #001A57;
+
+  --color-n-1: #FFFFFF;
+  --color-n-2: #F4F7FF;
+  --color-n-3: #CCD2E9;
+  --color-n-5: #7E8BB6;
+  --color-n-6: #4E5A85;
+  --color-n-7: #162044;
+  --color-n-8: #081131;
+  --color-n-9: #070E27;
+
+  --color-stroke-1: #1c243f;
+
+    --font-sora: "Roboto", "sans-serif";
+    --animate-animate: transition: all 300 ease-in-out;
+
+}
+
+.hero{
+  @apply font-bold text-4xl leading-tight sm:text-6xl sm:leading-tight md:text-7xl md:leading-snug lg:text-8xl lg:leading-snug;
+}
+
+.h1{
+  @apply font-bold text-3xl leading-snug sm:text-5xl sm:leading-snug md:text-6xl md:leading-snug lg:text-7xl lg:leading-snug;
+}
+
+.h2{
+  @apply font-bold text-2xl leading-snug sm:text-3xl sm:leading-snug md:text-4xl md:leading-snug lg:text-6xl lg:leading-snug;
+}
+
+.h3{
+  @apply font-bold text-xl leading-tight sm:text-2xl sm:leading-snug md:text-3xl md:leading-snug lg:text-4xl lg:leading-snug;
+}
+
+.h4{
+  @apply font-bold text-lg leading-snug sm:text-xl sm:leading-normal md:text-2xl md:leading-snug lg:text-2xl lg:leading-normal;
+}
+
+.h5{
+  @apply font-bold text-sm leading-tight sm:text-base sm:leading-snug md:text-lg md:leading-snug lg:text-lg lg:leading-normal;
+}
+
+.body-1{
+  @apply text-sm leading-tight font-light sm:text-base sm:leading-normal md:text-lg md:leading-normal lg:text-lg lg:leading-relaxed;
+}
+
+.body-2{
+  @apply text-xs leading-tight font-light sm:text-sm sm:leading-normal md:text-base md:leading-normal lg:text-base lg:leading-normal;
+}
+
+.body-3{
+  @apply text-xs leading-tight font-light sm:text-sm sm:leading-snug md:text-sm md:leading-normal lg:text-sm lg:leading-normal;
+}
+
+.caption-1{
+  @apply text-sm leading-tight font-light sm:text-base sm:leading-snug md:text-lg md:leading-normal lg:text-lg lg:leading-relaxed;
+}
+
+
+
+.caption-2{
+  @apply text-xs leading-tight font-light sm:text-sm sm:leading-normal md:text-base md:leading-snug lg:text-sm lg:leading-normal;
+}
+
+
+.button{
+  @apply font-sora text-xs sm:text-sm lg:text-base font-normal tracking-wider;
+  @apply duration-300 ease-in-out;
+
+}
+
+.animate{
+  @apply duration-300 ease-in-out;
+}
